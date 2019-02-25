@@ -1,0 +1,462 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 25, 2018, 5:17:48 PM
+    Author     : Malisha
+*/
+
+@font-face{
+    font-family: 'RammettoOne-Regular';
+    src: url(../assets/google_fonts/RammettoOne-Regular.ttf);
+    src: url(../assets/google_fonts/RammettoOne-Regular.ttf) format('ttf'),
+        url(../assets/google_fonts/RammettoOne-Regular.ttf) format('truetype');
+}
+
+@font-face{
+    font-family: 'JosefinSans-Regular';
+    src: url(../assets/google_fonts/JosefinSans-Regular.ttf);
+    src: url(../assets/google_fonts/JosefinSans-Regular.ttf) format('ttf'),
+        url(../assets/google_fonts/JosefinSans-Regular.ttf) format('truetype');
+}
+
+@font-face{
+    font-family: 'Numans-Regular';
+    src: url(../assets/google_fonts/Numans-Regular.ttf);
+    src: url(../assets/google_fonts/Numans-Regular.ttf) format('ttf'),
+        url(../assets/google_fonts/Numans-Regular.ttf) format('truetype');
+}
+
+
+body{
+
+    background-color: rgba(221, 191, 186, 0.35);
+}
+
+#browser_header{
+
+    background-color: rgba(221, 191, 186, 0.39);
+    height: 40px;
+    -webkit-app-region: drag;
+}
+
+.pin-div{
+
+    -webkit-app-region: no-drag;
+    float: left;
+    padding-top: 10px;
+    color: #868686;
+
+}
+
+.pin-div:hover{
+
+    color: #4c4949;
+}
+
+.setting-div{
+
+    -webkit-app-region: no-drag;
+    float: right;
+    padding-top: 8px;
+    color: #868686;
+
+}
+
+.setting-div:hover{
+
+    float: right;
+    padding-top: 8px;
+    color: #4c4949;
+}
+
+.new_folder_div{
+
+    -webkit-app-region: no-drag;
+    float: left;
+    padding-top: 8px;
+    color: #868686;
+}
+
+.new_folder_div:hover{
+
+    float: left;
+    padding-top: 8px;
+    color: #4c4949;
+}
+
+.folder-options-div{
+
+    position: relative;
+}
+
+.folder-options{
+
+    display: inline-block;
+    color: #868686;
+    cursor: pointer;
+}
+
+.folder-options:hover{
+
+    color: #4c4949;
+}
+
+/*.my_title_columns{
+
+
+    position: absolute;
+    bottom: 1px;
+    width: 100%;
+    position: absolute;
+    bottom: 1px;
+    width: 100%;
+}*/
+
+.close-div{
+
+    position: absolute;
+    top: 1px;
+    right: 20px;
+}
+
+.move-div{
+
+    position: absolute;
+    right: 40px;
+}
+
+.plus-div{
+
+    position: absolute;
+    /*right: 60px;  60px for 4 folder options icons*/  
+    right: 45px;
+}
+
+.settings-div{
+
+    position: absolute;
+    right: 80px;
+}
+
+.title-div{
+
+
+    text-align: center;
+    padding-top: 10px;
+    color: #737271;
+    text-decoration: underline;
+    /*font-family: 'Limelight', cursive;*/
+    /*font-family: 'Londrina Solid', cursive;*/
+    /*font-family: 'Expletus Sans', cursive;*/
+    /*font-family: 'Rammetto One', cursive;*/
+    font-family: 'RammettoOne-Regular';
+
+
+}
+
+#sub_folders{
+    width: 100%;
+}
+
+.my-card{
+    background-color: rgba(234, 234, 234, 0);
+}
+
+.dropzone{
+
+    position: relative;
+    width: 100%;
+    height: 48px;
+    border: 2px dashed #CCC;
+
+}
+
+input[type="file"]::-webkit-file-upload-button {  /*Style the button*/ 
+    background: #fff;
+    color: #555;
+    font: inherit;
+    padding: 0;
+    position: relative;
+    border: none;
+    text-align: left;
+    position: relative;
+    z-index: 100;
+    -webkit-appearance: none;
+    background-color: transparent;
+    color: transparent;
+}
+
+
+.dragover{
+
+    background-color: black;
+}
+
+.drop_title{
+
+    text-align: center;
+    padding-top: 15px;
+    font-size: 11px;
+    color: #bdbdbd;
+}
+
+.my-title-header{
+    height: 48px;
+    position: relative;
+    /*background-color: rgba(234, 234, 234, 0);*/
+
+}
+
+.my-card-head-title-btn{
+
+    /*text-decoration: none;*/
+
+    background-color: transparent;
+    color: black;
+    padding-top: 1px;
+    /*font-family: 'Josefin Sans', sans-serif;*/
+    font-family: 'JosefinSans-Regular';
+}
+
+.folder_name_para{
+
+    font-size: 13px;
+    margin-bottom: 0px;
+    /*font-family: 'Karla', sans-serif;*/
+    /*font-family: 'Gabriela', serif;*/
+    /*font-family: 'Stint Ultra Expanded', cursive;*/
+    /*font-family: 'Numans', sans-serif;*/
+    font-family: 'Numans-Regular';
+    width: 137px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.file_dropzone{
+
+    position: relative;
+    border: 1px dashed #CCC;
+    width: 100%;
+    height: 30px;
+
+}
+
+.file_drop_para{
+
+    text-align: center;
+    font-size: 8px;
+    padding-top: 8px;
+    color: #cccccc;
+
+
+}
+
+.file_input{
+
+    height: 28px;
+    padding-top: 10px;
+    width: 99%;
+    color: transparent;
+    position: absolute;
+    top: 0px;
+    left: 1px;
+
+}
+
+input[class="file_input"]::-webkit-file-upload-button {  /*Style for the file choose button*/ 
+    background: #fff;
+    color: #555;
+    font: inherit;
+    /*margin-bottom: 50px;*/
+    padding: 0;
+    bottom: 8px;
+    position: relative;
+    border: none;
+    text-align: left;
+    position: relative;
+    z-index: 100;
+    -webkit-appearance: none;
+    background-color: transparent;
+    color: transparent;
+}
+
+.my_file{
+
+    width: 100%;
+    height: 30px;
+
+}
+
+.file_name_para{
+
+    font-family: monospace;
+    font-size: 12px;
+    padding-top: 6px;
+    cursor: pointer;
+
+    background:transparent;
+    border:none;
+}
+
+.file_options_div{
+
+    position: relative;
+    display: inherit;
+}
+
+
+.file-options{
+
+    /*float: right;*/
+    margin-right: 8px;
+
+    /*display: inline-block;*/
+}
+
+.file-move-div{
+
+    position: absolute;
+    right: 74px;
+    cursor: pointer;
+}
+
+.file-edit-div{
+
+    position: absolute;
+    /*right: 50px; 50px for 4 icons file options*/
+    right: 35px;
+    cursor: pointer;
+}
+
+.file-type-div{
+
+    position: absolute;
+    right: 30px;
+    cursor: pointer;
+}
+
+.file-close-div{
+
+    position: absolute;
+    right: 13px;
+    cursor: pointer;
+}
+
+.modal-header{
+
+    position: relative;
+    height: 33px;
+
+}
+
+.modal-title{
+
+    font-size: 11px;
+    position: absolute;
+    bottom: 7px;
+}
+
+.new_folder_close_icon{
+
+    position: absolute;
+    right: 6px;
+    bottom: 5px;
+    font-weight: normal;
+}
+
+.header_input_folder_name{
+
+    box-shadow: none !important;
+    border: 1px solid #b2bac1 !important;
+}
+
+.btn_create_header{
+
+    box-shadow: none !important;
+}
+
+.loader{
+    position: absolute;
+    z-index: 999;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0px;
+    left: 0px;
+    /* text-align: center; */
+    color: black;
+    width: 100vw;
+    height: 100vh;   
+    background-color: rgba(0,0,0,0.5)
+}
+
+.loader div {
+
+}
+
+.loader i {
+    margin: auto;
+    display: block;
+}
+
+.main-menu-css{
+    font-family: monospace;
+}
+
+.color-code{
+
+    font-family: monospace;
+}
+
+.my-dropdown-menu{
+    z-index: 1000;
+    /*display: none;*/
+
+    min-width: 6rem;
+
+    float: left;
+
+    padding: .5rem 0;
+    margin: .125rem 0 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+}
+
+.colors-btn:active{
+    background-color: transparent;
+}
+
+.colors-btn:focus{
+    outline: none;
+}
+
+.color-code:active{
+    background-color: transparent;
+}
+
+.color-code:focus{
+    outline: none;
+}
+
+/*div.tooltip {
+    font-size: 5px;
+    width: 100px;
+}*/
+
+/*div.tooltip-inner {
+    max-width: 280px;
+}*/
+.tooltip {
+    font-size: 10px;
+}
